@@ -1,0 +1,458 @@
+*{
+    outline: none;
+}
+.fs-14 {
+    font-size: 14px !important;
+}
+
+.fs-15 {
+    font-size: 15px !important;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+}
+
+.fs-17 {
+    font-size: 17px !important;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+}
+
+.fs-19 {
+    font-size: 19px !important;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+}
+
+.fs-21 {
+    font-size: 21px !important;
+}
+
+.fs-23 {
+    font-size: 23px !important;
+}
+
+.fs-25 {
+    font-size: 25px !important;
+}
+
+.fs-32 {
+    font-size: 32px !important;
+}
+
+.fs-35 {
+    font-size: 35px !important;
+}
+
+.fs-41 {
+    font-size: 41px !important;
+}
+
+.fs-48 {
+    font-size: 48px !important;
+}
+
+.bg-primary {
+    background-color: #eaad13 !important;
+}
+
+.bg-secondary {
+    background-color: #212529 !important;
+}
+
+.bg-success {
+    background-color: #f1f1f1 !important;
+}
+
+.bg-danger {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.bg-light {
+    background-color: #f4f6fa !important;
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.bg-black {
+    background-color: #000 !important;
+}
+
+.bg-dark {
+    background-color: #444444 !important;
+}
+
+.lato {
+    font-family: 'Lato';
+}
+
+.text-primary {
+    color: #eaad13 !important;          
+}
+
+
+.text-secondary {
+    color: #212529 !important;
+}
+
+.text-success {
+    color: #f1f1f1 !important;
+}
+
+.text-danger {
+    color: #353535 !important;
+}
+
+.text-warning {
+    color: #444444 !important;
+}
+
+.text-info {
+    color: #666 !important;
+}
+
+.text-para {
+    color: #555555 !important;
+}
+
+.text-white {
+    color: #FFF !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.text-dark {
+    color: #151515 !important;
+
+}
+
+.text-light {
+    color: #777 !important;
+}
+
+.text-user {
+    color: #f0efef !important;
+}
+
+.text-hed {
+    color: #222222 !important;
+}
+
+.text-btm {
+    color: #0d0d0d !important;
+}
+
+.navbar ul li a {
+    position: relative;
+    color: white;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+.name{
+    position: relative;
+}
+.navbar ul li a{
+    font-size: 18px;
+}
+.navbar .name::after{
+position: absolute;
+content: '********';
+color: #eaad13;
+left: 90px;
+top:35px;
+transition: all 1s;
+}
+.navbar .name::before{
+    position: absolute;
+    content: '********';
+    color: #eaad13;
+    top:-10px;
+    right: 90px;
+    transition: all 1s;
+    }
+.navbar .name:hover::after{
+    right: 0!important;
+    left: 0!important;
+}
+.navbar .name:hover::before{
+    right: 0!important;
+    left: 0!important;
+}
+.navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 5%;
+    background-color: #eaad13;
+    bottom: 0;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+
+.navbar ul li a:hover::after {
+    opacity: 1;
+    visibility: visible;
+    left: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #eaad13;
+}
+
+.banner .banner-content a .btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.banner .banner-content a .btn {
+    background-color: #eaad13;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+.banner .banner-img img{
+    filter: grayscale(100%);
+}
+
+.banner .banner-img img:hover {
+    transform: translateY(0) scale(1.1);
+    transition: all 1s;
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+.with h1 {
+    position: relative;
+    padding: 2px 0;
+}
+
+.with h1::before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    background: #eaad13;
+}
+
+.app h2 {
+    position: relative;
+    padding: 2px 0;
+}
+
+.app h2::before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    background: #eaad13;
+}
+
+body {
+    overflow-x: hidden; 
+}
+
+.with .with-img img:hover {
+    transform: rotate(4deg);
+    transition: 1s;
+}
+
+.app .card {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 25px 10px;
+    transition: all 1s;
+}
+
+.app .circlue {
+    background: #fff;
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+
+.app h3 {
+    position: relative;
+
+}
+
+.app h3::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    background: #eaad13;
+    left: 0;
+    transition: all 0.5s;
+    top: 75px;
+}
+
+.app .card:hover h3::after {
+    width: 50px;
+
+}
+
+.app .card:hover .icon i {
+    background-color: #eaad13 !important;
+    color: white !important;
+}
+
+.app .card:hover {
+    box-shadow: 0px 0px 10px 13px rgba(240, 46, 170, 0.4);
+}
+
+.resume h2 {
+    position: relative;
+    padding: 2px 0;
+}
+
+.resume h2::before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    background: #eaad13;
+}
+
+.contact h2 {
+    position: relative;
+    padding: 2px 0;
+}
+
+.contact h2::before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    bottom: 0;
+    background: #eaad13;
+}
+
+.footer h2 {
+    position: relative;
+    padding: 2px 0;
+}
+
+.footer h2::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    bottom: 0;
+    background: #eaad13;
+}
+.blog h2 {
+    position: relative;
+    padding: 2px 0;
+}
+
+.blog h2::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 2px;
+    bottom: 0;
+    background: #eaad13;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    background: #eaad13;
+    height: 50%;
+    width: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.box:after {
+    top: auto;
+    bottom: -50%;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box .icon-box a:hover i {
+
+    color: #eaad13;
+    overflow: hidden;
+}
+
+.box:hover::before {
+    top: 0;
+}
+
+.box:hover::after {
+    bottom: 0;
+}
+
+.programming:hover .box-content {
+    opacity: 1 !important;
+    bottom: 0 !important;
+}
+
+.box:hover .icon-box {
+    opacity: 1 !important;
+    top: -90% !important;
+}
+
+.resume .card {
+    width: 100%;
+    padding: 20px;
+    height: 30%;
+}
+
+.resume .icon {
+    width: 100%;
+    padding: 20px;
+    height: 30%;
+}
+
+.footer .icon i:hover {
+    background-color: #eaad13 !important;
+    color: white !important;
+}
+
+.with .icon i:hover {
+    background-color: #eaad13 !important;
+    color: white !important;
+}
+
+footer ul li{
+    padding: 5px 0;
+    font-size: 17px;
+}
+footer ul li a{
+    color: white;
+}

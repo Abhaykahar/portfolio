@@ -1,0 +1,623 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.w-1 {
+  width: 8.33%;
+}
+
+.w-2 {
+  width: 16.66%;
+}
+
+.w-3 {
+  width: 25%;
+}
+
+.w-4 {
+  width: 33.33%;
+}
+
+.w-5 {
+  width: 41.66%;
+}
+
+.w-6 {
+  width: 50%;
+}
+
+.w-7 {
+  width: 58.33%;
+}
+
+.w-8 {
+  width: 66.66%;
+}
+
+.w-9 {
+  width: 75%;
+}
+
+.w-10 {
+  width: 83.33%;
+}
+
+.w-11 {
+  width: 91.66%;
+}
+
+.w-12 {
+  width: 100%;
+}
+
+.w-1, .w-2, .w-3, .w-4, .w-5, .w-6, .w-7, .w-8, .w-9, .w-10, .w-11, .w-12 {
+  padding-left: -12px;
+  padding-right: -12px;
+}
+
+body {
+  background-color: #000;
+  font-family: "Lexend";
+  color: #fff;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.Asked a .btn, .Finances .text-content .perti a, .oury .our-content ul li a .btn, header .header a .btn {
+  color: #fff;
+  font-size: 18px;
+  padding: 0 10px;
+  margin-left: 10px;
+}
+
+.today a, .oury .our-content ul li a .btn1, .banner .banner-content a .btn1, header .header a .btn1 {
+  color: #000;
+  background-color: #CAFF33;
+  padding: 14px 30px 14px 30px;
+  border-radius: 82px;
+}
+
+.open .open-content p, .new .card p, .valuess .title-1 p, .Vision .Vision-content p, .Mission .mission-content p, .how .wow p, .Competitive .Health .loll p, .Bank .content1 p, .Customer .card .card-1 p, .values .title p, .banner1 .wall .wall-contnet p, .last1 .address .f-menu .fti p, .last1 .address .f-menu .help p, .today p, .started .tell .digital p, .Asked .card p, .Accesss .card p, .Finances .text-content .perti p, .Finances .text-content p, .Use p, .Checkin .Checking p, .oury .our p, .banner .banner-content p {
+  color: #B3B3B3;
+  font-size: 18px;
+  padding: 20px 0px;
+}
+
+header {
+  padding: 50px 20px;
+  background-image: url("../img/Abstract Design.png");
+  background-repeat: no-repeat;
+}
+header .header {
+  width: 100%;
+  background-color: #1C1C1C;
+  border: 1px solid #262626;
+  padding: 20px 34px 20px 34px;
+  border-radius: 100px;
+}
+header .header .logo {
+  width: 155.83px;
+}
+header .header .menu ul li {
+  margin: 0 10px;
+}
+header .header .menu ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 24px 12px 24px;
+  background-color: #262626;
+  border-radius: 82px;
+}
+.banner {
+  padding: 100px 0;
+  position: relative;
+}
+.banner .banner-content .icon {
+  width: 55%;
+  background-color: #262626;
+  padding: 10px;
+  border-radius: 61px;
+}
+.banner .banner-content .icon i {
+  background-color: #CAFF33;
+  color: #000;
+  font-size: 18px;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.banner .banner-content .icon span {
+  color: #fff;
+  padding: 0 10px;
+}
+.banner .banner-content h2 {
+  font-size: 40px;
+  padding-top: 20px;
+  line-height: 60px;
+}
+.banner .banner-content h2 span {
+  color: #CAFF33;
+}
+.banner .banner-content p {
+  padding-top: 20px;
+  line-height: 30px;
+}
+.banner .banner-content a .btn1 {
+  width: 190px;
+  height: 50px;
+  margin: 30px 0;
+  text-align: center;
+}
+.banner .banner-img {
+  width: 515px;
+  height: 624px;
+}
+.banner .arrow {
+  position: absolute;
+  top: 130px;
+  right: 90px;
+  z-index: -1;
+}
+
+.oury {
+  padding: 100px 0;
+}
+.oury .our h2 {
+  font-size: 48px;
+}
+.oury .our h2 span {
+  color: #CAFF33;
+  margin-left: 10px;
+}
+.oury .our p {
+  margin-top: 20px;
+  padding-right: 90px;
+}
+.oury .our-content ul {
+  background-color: #1C1C1C;
+  padding: 10px 15px;
+  margin: 0 25px;
+  border-radius: 82px;
+}
+.oury .our-content ul li a .btn1 {
+  margin-right: 20px;
+}
+.oury .our-content ul li a .btn {
+  margin-left: 10px;
+}
+
+.Checkin {
+  padding: 30px 0;
+}
+.Checkin .Checking {
+  border-right: 1px solid #262626;
+  padding: 0 20px;
+}
+.Checkin .Checking h2 {
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0;
+}
+.Checkin .Checking p {
+  text-align: center;
+}
+
+.Use {
+  padding: 50px 0;
+}
+.Use .used h2 {
+  font-size: 48px;
+  color: #CAFF33;
+  margin-bottom: 20px;
+}
+.Use p {
+  padding-right: 50px;
+}
+
+.Finances .oye .card i, .Checkin .Checking i {
+  background-color: #1C1C1C;
+  border-radius: 50%;
+  color: #CAFF33;
+  margin-left: 180px;
+  padding: 15px 15px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Finances {
+  padding: 60px 0;
+}
+.Finances .oye {
+  background-image: url("../img/Abstract Design (2).png");
+  background-repeat: no-repeat;
+  padding: 20px 10px;
+}
+.Finances .oye .card {
+  background-color: #1A1A1A;
+  padding: 10px 15px;
+  border: 1px solid #262626;
+  border-radius: 16px;
+  width: 90%;
+  height: 89%;
+  margin: 10px;
+}
+.Finances .oye .card i {
+  font-size: 24px;
+  margin-left: 90px;
+  background-color: #262626;
+  width: 50px;
+  text-align: center;
+}
+.Finances .oye .card h6 {
+  font-size: 20px;
+  text-align: center;
+}
+.Finances .text-content h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.Finances .text-content .perti {
+  padding: 20px 0;
+}
+.Finances .text-content .perti h3 {
+  color: #CAFF33;
+  font-size: 48px;
+  padding: 0 20px;
+}
+.Finances .text-content .perti a {
+  margin-top: 40px;
+  background-color: #1A1A1A;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.order {
+  order: -1;
+}
+
+.Accesss .Access a .btn2, .Accesss .Access a .btn1 {
+  background-color: #262626;
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.Accesss .Access {
+  background-color: #1C1C1C;
+  width: 50%;
+  height: 40%;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px 0;
+}
+.Accesss .Access a .btn {
+  background-color: #262626;
+  color: #CAFF33;
+  border-radius: 100px;
+  padding: 10px 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+.Accesss .card {
+  background-color: #1C1C1C;
+  padding: 10px 20px;
+  border: 1px solid #262626;
+  border-radius: 12px;
+  margin: 10px 0;
+  width: 430px;
+}
+.Accesss .card .Access-content h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.Accesss .card .Access-content i {
+  color: #CAFF33;
+  font-size: 18px;
+}
+.Asked .card {
+  background-color: #262626;
+  border-radius: 14px;
+  padding: 30px 20px;
+  margin: 10px 20px;
+  width: 650px;
+  height: 350px;
+}
+.Asked .card h3 {
+  font-size: 20px;
+  padding: 20px 0;
+  margin: 10px 0;
+}
+.Asked .card p {
+  line-height: 30px;
+}
+.Asked a .btn {
+  margin-left: 580px;
+  margin-top: 20px;
+  background-color: #262626;
+  padding: 18px 24px 18px 24px;
+  border-radius: 12px;
+}
+
+.started .tell .b1, .started .tell .b3 {
+  background: linear-gradient(270deg, rgba(25, 25, 25, 0) 0%, #191919 105.84%);
+  border-radius: 20px;
+}
+.started .tell .digital {
+  padding: 20px;
+}
+.started .tell .digital .web img {
+  width: 60px;
+  height: 60px;
+}
+.started .tell .digital h6 {
+  text-align: center;
+  color: #CAFF33;
+  font-size: 18px;
+}
+
+.today {
+  margin: 100px 200px;
+  background-color: rgba(28, 28, 28, 0.462745098);
+  padding: 40px 0;
+  border-radius: 30px;
+  background-image: url(../img/Abstract\ Design1.png);
+  background-repeat: no-repeat;
+}
+.today h2 {
+  font-size: 40px;
+}
+.today span {
+  color: #CAFF33;
+  font-size: 40px;
+}
+.today a {
+  margin: 0 20px;
+}
+
+footer {
+  background-color: #262626;
+}
+footer .menu {
+  margin-left: 395px;
+  padding: 20px 0px;
+}
+footer .menu ul li a {
+  padding: 0 10px;
+  color: #fff;
+}
+footer .local {
+  margin: 0 395px;
+  padding: 30px 0;
+}
+footer .local .icon {
+  margin: 0;
+}
+footer .local .icon i {
+  color: #CAFF33;
+  padding: 0 10px;
+  font-size: 14px;
+}
+footer .local .icon h2 {
+  font-size: 14px;
+}
+
+.last1 {
+  background-color: rgba(28, 28, 28, 0.5176470588);
+  margin: 100px 0px;
+}
+.last1 .address {
+  margin: 55px 0;
+}
+.last1 .address img {
+  width: 150px;
+}
+.last1 .address .f-menu ul li {
+  padding: 24px 10px;
+}
+.last1 .address .f-menu .help {
+  padding: 20px;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626;
+}
+.last1 .address .f-menu .help i {
+  color: #CAFF33;
+  width: 24px;
+  padding: 10px;
+}
+.last1 .address .f-menu .help p {
+  padding: 10px;
+}
+.last1 .address .f-menu .fti {
+  background-color: rgba(0, 0, 0, 0.389);
+  border-radius: 50px;
+  margin: 50px;
+}
+.last1 .address .f-menu .fti img {
+  width: 40px;
+  margin: 0 5px;
+}
+.last1 .address .f-menu .fti p {
+  text-align: center;
+}
+
+.open .open-content h2 span, .how .wow span, .Bank .content1 h2, .values .title h2, .Values .Values-content h2 {
+  color: #fff;
+  font-size: 38px;
+}
+
+.open .open-content h2, .valuess .title-1 h2 span, .how .wow h2, .Bank .content1 span, .values .title h2 span {
+  color: #CAFF33;
+  font-size: 38px;
+}
+// careers start
+
+.banner1 {
+  padding: 50px 0;
+}
+.banner1 .wall {
+  position: relative;
+}
+.banner1 .wall .wall-contnet {
+  z-index: 1;
+  background-color: #1A1A1A;
+  padding: 50px;
+  border-radius: 20px 0px 60px 20px;
+}
+.banner1 .wall .wall-contnet h2 {
+  font-size: 48px;
+  padding: 10px;
+}
+.banner1 .wall .wall-contnet h2 span {
+  color: #CAFF33;
+}
+.banner1 .wall .wall-contnet p {
+  padding: 10px;
+}
+.banner1 .wall .wall-img img {
+  position: absolute;
+  top: 0;
+  right: -52px;
+  z-index: -2;
+  border-radius: 16px;
+}
+
+.values {
+  padding-top: 300px;
+}
+.Customer {
+  padding: 20px 0;
+}
+.Customer .card {
+  padding: 20px;
+}
+.Customer .card .card-1 {
+  margin: 20px;
+  border-left: 1px solid #CAFF33;
+  padding: 0px 20px;
+}
+.Customer .card .card-1 h2 {
+  font-size: 48px;
+  color: #4C4C4D;
+}
+.Competitive .Health {
+  padding: 30px;
+  border-radius: 40px;
+}
+.Competitive .Health .loll {
+  background-color: #262626;
+  border-radius: 40px;
+  margin: 20px;
+  padding: 20px;
+}
+.Competitive .Health .loll .and {
+  padding: 40px;
+}
+.Competitive .Health .loll .and h2 {
+  font-size: 20px;
+  padding: 0 10px;
+}
+.Competitive .Health .loll p {
+  padding: 0;
+  text-align: justify;
+}
+
+.Mission {
+  margin: 20px 0;
+}
+.Mission .mission-img img {
+  width: 644px;
+  height: 641px;
+  border-right: 1px solid #CAFF33;
+  border-width: 1%;
+}
+.Mission .mission-content {
+  padding: 10px;
+}
+.Mission .mission-content h2 {
+  font-size: 38px;
+}
+.Vision {
+  padding: 20px 0;
+}
+.Vision .Vision-img img {
+  width: 644px;
+  height: 641px;
+  border-left: 1px solid #CAFF33;
+}
+.Vision .Vision-content {
+  padding: 10px;
+}
+.Vision .Vision-content h2 {
+  font-size: 38px;
+}
+.valuess {
+  padding: 70px 0;
+}
+.new .card {
+  background-color: #1C1C1C;
+  padding: 30px;
+  overflow: hidden;
+  border-radius: 40px 40px 16px 16px;
+  border: 1px solid #262626;
+  margin: 15px;
+}
+.new .card h5 {
+  font-size: 24px;
+  padding: 20px 0;
+}
+.new .card span {
+  background-color: #1A1A1A;
+  margin: 10px;
+  border-radius: 68px;
+  padding: 8px 16px 8px 16px;
+  color: #B3B3B3;
+}
+.open {
+  padding: 20px 0;
+  // careers end
+}/*# sourceMappingURL=style.css.map */

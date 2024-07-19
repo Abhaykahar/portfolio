@@ -1,0 +1,815 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+$fs-14:14px;
+$fs-16:16px;
+$fs-18:18px;
+$fs-20:20px;
+$fs-24:24px;
+$fs-22:22px;
+$fs-30:30px;
+$fs-38:38px;
+$fs-40:40px;
+$fs-48:48px;
+$fs-58:58px;
+$black:#000;
+$white:#fff;
+$grey-15:#262626;
+$grey-11:#1C1C1C;
+$grey-10:#1A1A1A;
+$grey-70:#B3B3B3;
+$Green-60:#CAFF33;
+$white-90:#E4E4E7;
+$grey-30:#4C4C4D;
+
+.w-1{
+    width: 8.33%;
+}
+.w-2{
+    width: 16.66%;
+}
+.w-3{
+    width: 25%;
+}
+.w-4{
+    width: 33.33%;
+}
+.w-5{
+    width: 41.66%;
+}
+.w-6{
+    width: 50%;
+}
+.w-7{
+    width: 58.33%;
+}
+.w-8{
+    width: 66.66%;
+}
+.w-9{
+    width: 75%;
+}
+.w-10{
+    width: 83.33%;
+}
+.w-11{
+    width: 91.66%;
+}
+.w-12{
+    width: 100%;
+} 
+.w-1,.w-2,.w-3,.w-4,.w-5,.w-6,.w-7,.w-8,.w-9,.w-10,.w-11,.w-12{
+    padding-left: -12px;
+    padding-right: -12px;
+  } 
+
+body{
+    background-color: $black;
+    font-family: 'Lexend';
+    color: $white;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.d-flex{
+    display: flex;
+    flex-wrap:wrap;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+
+%btn{
+    color:$white;
+    font-size: $fs-18;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+%btn1{
+    color:$black;
+    background-color: $Green-60;
+    padding: 14px 30px 14px 30px;
+    border-radius: 82px;
+}
+%p{
+    color: $grey-70;
+    font-size: $fs-18;
+    padding: 20px 0px;
+}
+
+header{
+    padding: 50px 20px;
+    background-image: url('../img/Abstract\ Design.png');
+    background-repeat: no-repeat;
+    .header{
+        width: 100%;
+        background-color: $grey-11;
+        border: 1px solid $grey-15;
+        padding:  20px 34px 20px 34px;
+        border-radius: 100px;
+        .logo{
+            width: 155.83px;
+        }
+        .menu{
+            ul{
+                li{
+                    margin: 0 10px;
+                    a{
+                        color:$white;
+                        font-size: $fs-18;
+                        padding: 12px 24px 12px 24px;
+                        background-color: $grey-15;
+                        border-radius: 82px;
+                        
+                    }
+                }
+            }
+        }
+        a{
+            .btn{
+                @extend %btn;
+            }
+            .btn1{
+                @extend %btn1;
+            }
+        }
+    }
+}
+.banner{
+    padding: 100px 0;
+    position: relative;
+    .banner-content{
+      .icon{
+          width: 55%;
+          background-color: $grey-15;
+          padding:   10px;
+          border-radius: 61px;
+        i{
+            background-color: $Green-60;
+            color: $black;
+            font-size: $fs-18;
+            border-radius: 50%;
+            padding: 10px;
+            text-align: center;
+        }
+        span{
+            color: $white;
+            padding: 0 10px;
+            
+        }
+      }
+      h2{
+        font-size: $fs-40;
+        padding-top: 20px;
+        line-height: 60px;
+        span{
+            color: $Green-60;
+        } 
+        
+    }
+    p{
+        @extend %p;
+        padding-top: 20px;
+        line-height: 30px;
+    }
+    a{
+        .btn1{
+            @extend %btn1;
+            width: 190px;
+            height: 50px;
+            margin:30px 0;
+            text-align: center;
+        }
+    }
+ 
+    }
+    .banner-img{
+        width: 515px;
+        height: 624px;
+    }
+    .arrow{
+        position: absolute;
+        top:130px;
+        right: 90px;
+        z-index: -1;
+    }
+}
+
+.oury{
+    padding: 100px 0;
+    .our{
+        h2{
+            font-size: $fs-48;
+            span{
+                color: $Green-60;
+                margin-left: 10px;
+            }
+        }
+        p{
+            @extend %p;
+            margin-top: 20px;
+            padding-right: 90px;
+        }
+    }
+    .our-content{
+        ul{
+            background-color: $grey-11;
+            padding: 10px 15px;
+            margin:  0 25px;
+            border-radius: 82px;
+            li{
+                a{
+                    .btn1{
+                        @extend %btn1;
+                        margin-right:20px;
+                    }
+                    .btn{
+                        @extend %btn;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Checkin{
+    padding: 30px 0;
+    .Checking{
+        border-right: 1px solid $grey-15;
+        padding: 0 20px;
+        i{
+            @extend %button;
+        }
+        h2{
+            font-size: $fs-24;
+            text-align: center;
+            padding: 10px 0;
+        }
+        p{
+            @extend %p;
+            text-align: center;
+        }
+    }
+}
+
+.Use{
+    padding: 50px 0;
+    .used{
+        h2{
+            font-size: $fs-48;
+            color: $Green-60;
+            margin-bottom: 20px;
+        }
+    }   p{
+        @extend %p;
+        padding-right:50px;
+    }
+}
+
+%button{
+    background-color: $grey-11;
+            border-radius:50%;
+            color:$Green-60;
+            margin-left:180px;
+            padding: 15px 15px;
+            font-size: $fs-24;
+            margin-bottom: 10px;
+}
+.Finances{
+    padding: 60px 0;
+    .oye{
+        background-image: url('../img/Abstract\ Design\ \(2\).png');
+        background-repeat: no-repeat;
+        padding: 20px 10px;
+    .card{
+        background-color: $grey-10;
+        padding: 10px 15px;
+        border: 1px solid $grey-15;
+        border-radius: 16px;
+        width: 90%;
+        height: 89%;
+        margin: 10px;
+        i{
+            @extend %button;
+            font-size: $fs-24;
+            margin-left: 90px;
+            background-color: $grey-15;
+            width: 50px;
+            text-align: center;
+        }
+        h6{
+            font-size: $fs-20;
+            text-align: center;
+
+        }
+    }
+}
+    .text-content{
+        h2{
+            font-size: $fs-30;
+            margin-bottom: 10px;
+        }
+        p{
+            @extend %p;
+        }
+        .perti{
+            padding: 20px 0;
+            h3{
+                color: $Green-60;
+                font-size: $fs-48;
+                padding: 0 20px;
+            }
+            p{
+                @extend %p;
+            }
+            a{
+                @extend %btn;
+                margin-top:40px;
+                background-color: $grey-10;
+                padding: 10px 20px;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.order{
+    order:-1;
+}
+%btn4{
+    background-color: $grey-15;
+    color: $white;
+    border-radius: 100px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.Accesss{
+    .Access{
+        background-color: $grey-11;
+        width: 50%;
+        height: 40%;
+        padding: 20px;
+        border-radius: 12px;
+        margin: 20px 0;
+
+        a{
+            .btn{
+                background-color: $grey-15;
+                color: $Green-60;
+                border-radius: 100px;
+                padding: 10px 20px;
+                margin: 10px 0;
+                text-align: center
+            }
+            .btn1{
+                @extend %btn4;
+            }
+            .btn2{
+                @extend %btn4;
+            }
+        }
+    }
+    .card{
+        background-color: $grey-11;
+        padding: 10px 20px;
+        border: 1px solid $grey-15;
+        border-radius: 12px;
+        margin: 10px 0;
+        width: 430px;
+    .Access-content{
+        h2{
+            font-size: $fs-22;
+            margin-bottom: 10px;
+        }
+        i{
+            color: $Green-60;
+            font-size: $fs-18;
+        }
+    }
+    p{
+        @extend %p;
+    }
+    }
+}
+.Asked{
+    .card{
+        background-color: $grey-15;
+        border-radius: 14px;
+        padding: 30px 20px;
+        margin: 10px 20px;
+        width: 650px;
+        height: 350px;
+        h3{
+            font-size: $fs-20;
+            padding: 20px 0;
+            margin: 10px 0;
+        }
+        p{
+            @extend %p;
+            line-height: 30px;
+        }
+    }
+    a{
+        .btn{
+            @extend %btn;
+            margin-left:580px;
+            margin-top: 20px;
+            background-color: $grey-15;
+            padding: 18px 24px 18px 24px;
+            border-radius: 12px;
+        }
+    }
+}
+
+.started{
+    .tell{
+        .b1,.b3{
+            background: linear-gradient(270deg, rgba(25, 25, 25, 0.00) 0%, #191919 105.84%);
+            border-radius: 20px;
+            
+        }
+        .digital{
+            padding: 20px;
+            .web{
+                img{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            p{
+                @extend %p;
+            }
+            h6{
+                text-align: center;
+                color: $Green-60;
+                font-size: $fs-18;
+            }
+        }
+    }
+}
+
+.today {
+    margin: 100px 200px;
+    background-color: #1c1c1c76;
+    padding: 40px 0 ;
+    border-radius: 30px;
+    background-image: url(../img/Abstract\ Design1.png);
+    background-repeat: no-repeat;
+    h2 {
+        font-size: $fs-40;
+    }
+    span {
+        color: $Green-60;
+        font-size: $fs-40;
+    }
+    p {
+       @extend %p;
+    }
+    a {
+        @extend %btn1;
+        margin: 0 20px;
+    }
+}
+
+footer{
+    background-color: $grey-15;
+    .menu{
+        margin-left: 395px;
+        padding: 20px 0px;
+        ul{
+            li{
+                a{
+                    padding: 0 10px;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .local{
+        margin:0 395px;
+        padding: 30px 0;
+        .icon{
+            margin: 0;
+            i{
+                color: $Green-60;
+                padding: 0 10px;
+                font-size: $fs-14;
+            }
+            h2{
+                font-size: $fs-14;
+            }
+        }
+    }
+ 
+    
+}
+
+
+.last1 {
+    background-color: #1c1c1c84;
+    margin: 100px 0px;
+    .address {
+        margin: 55px 0;
+        img {
+            width: 150px;
+        }
+        .f-menu {
+            ul {
+                li {
+                    padding: 24px 10px;
+                }
+            }
+            .help {
+                padding: 20px;
+                border-top: 1px solid #262626;
+                border-bottom: 1px solid #262626;
+                i {
+                    color: $Green-60;
+                    width: $fs-24;
+                    padding: 10px;
+                }
+                p {
+                    @extend %p;
+                    padding: 10px;
+                }
+            }
+            .fti {
+                background-color: rgba(0, 0, 0, 0.389);
+                border-radius: 50px;
+                margin: 50px;
+                img {
+                    width: 40px;
+                    margin: 0 5px;
+                }
+                p{
+                  @extend %p;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+%title{
+        color: $white;
+        font-size: $fs-38;  
+}
+%title1{
+        color: $Green-60;
+        font-size: $fs-38;
+}
+
+  // careers start
+.banner1{
+    padding: 50px 0;
+    .wall{
+        position: relative; 
+        .wall-contnet{
+            z-index: 1;
+            background-color: $grey-10;
+            padding: 50px;
+            border-radius: 20px 0px 60px 20px;
+
+            
+            h2{
+                font-size: $fs-48;
+                padding: 10px;
+                span{
+                    color: $Green-60;
+                }
+            }
+            p{
+                @extend %p;
+                padding: 10px;
+            }
+        }
+        .wall-img{
+            img{
+                position: absolute;
+                top:0;
+                right:-52px;
+                z-index: -2;
+                border-radius: 16px;
+
+            }
+
+           
+        }
+    }
+}
+// careers end
+.Values{
+    .Values-content{
+        h2{
+                @extend %title;
+        }
+    }
+}
+.values{
+    padding-top: 300px;
+    .title{
+        h2{
+            @extend %title;
+            span{
+                @extend %title1;
+            }
+        }
+        p{
+            @extend %p;
+        }
+    }
+}
+.Customer{
+    padding: 20px 0;
+    .card{
+        padding: 20px;
+        .card-1{
+            margin: 20px;
+            border-left: 1px solid $Green-60;
+            padding:0px 20px;
+            
+            
+            h2{
+                font-size: $fs-48;
+                color: #4C4C4D;
+            }
+            p{
+                @extend %p;
+            }
+        }
+    } 
+}
+.Bank{
+    .content1{
+        h2{
+            @extend %title;
+        }
+        span{
+            @extend %title1;
+        }
+        p{
+            @extend %p;
+        }
+
+    }
+}
+.Competitive{
+    .Health{
+        padding: 30px;
+        border-radius: 40px;
+            .loll{
+                background-color: $grey-15;
+                border-radius: 40px;
+                margin: 20px;
+                padding:20px;
+                .and{
+                    padding: 40px;
+                    h2{
+                        font-size: $fs-20;
+                        padding: 0 10px ;
+                    }
+                }
+                p{
+                 @extend %p;
+                 padding: 0;
+                 text-align: justify;
+                }
+            }
+    }
+}
+.how{
+    .wow{
+        h2{
+            @extend %title1;
+        }
+        span{
+            @extend %title;
+        }
+        p{
+            @extend %p;
+        }
+    }
+}
+.Mission{
+    margin: 20px 0;
+    .mission-img{
+        img{
+        width: 644px;
+        height: 641px;
+        border-right: 1px solid $Green-60;
+        border-width: 1%;
+        }
+    }
+    .mission-content{
+        padding: 10px;
+        h2{
+            font-size: $fs-38;
+        }
+        p{
+            @extend %p;
+        }
+    }
+}
+.Vision{
+    padding: 20px 0;
+    .Vision-img{
+        img{
+        width: 644px;
+        height: 641px;
+        border-left: 1px solid $Green-60;
+        }
+    }
+    .Vision-content{
+        padding: 10px;
+        h2{
+            font-size: $fs-38;
+        }
+        p{
+            @extend %p;
+        }
+    } 
+}
+.valuess{
+    padding: 70px 0;
+    .title-1{
+        h2{
+            span{
+                @extend %title1;
+            }
+        }
+        p{
+            @extend %p;
+        }
+    }
+}
+.new{
+    .card{
+        background-color: $grey-11;
+        padding: 30px;
+        overflow: hidden;
+        border-radius: 40px 40px 16px 16px;
+        border: 1px solid $grey-15;
+        margin: 15px;
+        h5{
+            font-size: $fs-24;
+            padding: 20px 0;
+        }
+        span{
+            background-color: $grey-10;
+            margin:  10px;
+            border-radius: 68px;
+            padding: 8px 16px 8px 16px;
+            color: $grey-70;
+        }
+        p{
+            @extend %p;
+        }
+    }
+}
+
+.open{
+    padding: 20px 0;
+    .open-content{
+        h2{
+            @extend %title1;
+            span{
+                @extend %title;
+            }
+        }
+        p{
+            @extend %p;
+        }
+    }
+}
+  
