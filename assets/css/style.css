@@ -57,6 +57,34 @@
     font-size: 48px !important;
 }
 
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.your-element {
+    overflow-x: hidden!important;
+}
+
+
+body {
+    overflow-x: hidden!important;
+}
+
+
+.your-element::-webkit-scrollbar {
+    display: none;
+}
+
+
+.your-element {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+
+
+
 .bg-primary {
     background-color: #eaad13 !important;
 }
@@ -266,9 +294,7 @@ transition: all 1s;
     background: #eaad13;
 }
 
-body {
-    overflow-x: hidden; 
-}
+
 
 .with .with-img img:hover {
     transform: rotate(4deg);
