@@ -465,9 +465,7 @@ footer ul li a{
 .card img:hover{
     transform: scale(1.1);
 }
-.card{
-    overflow: hidden;
-}
+
 .card img{
     transition: all 0.5s!important;
 
